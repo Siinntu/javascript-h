@@ -1,0 +1,28 @@
+<!-- //DOM PART-3 149 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="index2.js"></script>
+<body>
+    <div id="parentdiv">
+        <p id="first">this is the first paragraph</p>
+        <p id="second">this is the second paragraph</p>
+        <p id="third">this is the first paragraph</p>
+    </div>
+    <script>
+        var parentdiv=document.getElementById('parentdiv')
+        console.log(parentdiv);
+        var firstparagraph=parentdiv.firstChild
+        var lastparagraph =parentdiv.lastChild
+        var secondparagraph=firstparagraph.nextSibling
+        console.log('firstparagraph:',firstparagraph)
+        console.log('lastparagraph:',lastparagraph)
+        console.log('secondparagraph:',secondparagraph)
+
+    </script>
+</body>
+</html>

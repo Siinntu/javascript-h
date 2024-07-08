@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<script src="index2.js"></script>
+<body>
+    <h1>dom selector</h1>
+    <p id="myparagraph">this is paragraph with dummy text</p>
+    <span id="hi">hello</span>
+<ul>
+    <li class="listitem">item1</li>
+    <li class="listitem">item2</li>
+    <li class="listitem">item3</li>
+    <li class="listitem">item4</li>
+</ul>
+<!-- <ol>
+    <li class="listitem">item5</li>
+    <li class="listitem">item6</li>
+    <li class="listitem">item7</li>
+    <li class="listitem">item8</li> 
+</ol> -->
+<script>
+    // console.log(document.getElementById('myparagraph'))
+    // console.log(document.getElementById('hi'))
+    //  const listitem=document.getElementsByClassName('listitem')
+    const paragraph=document.getElementById('myparagraph');
+    //  const spanitem=document.querySelector('#hi')
+    //  const firstlistitem=document.querySelector('.listitem')
+    //  const alllistitems=document.querySelector('.listitem')
+    //  const targetallliitems=document.getElementsByTagName('li')
+    //  console.log(targetallliitems)
+    paragraph.addEventListener('click',()=>{
+        paragraph.classList.toggle('highlight')
+    })
+    // console.log(listitem)
+    // console.log(alllistitems)
+    
+    //  spanitem.style.color='green'
+    //  console.log(firstlistitem)
+    //  firstlistitem.textContent='updated item'
+</script>
+</body>
+</html>

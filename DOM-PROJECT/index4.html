@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom part-3</title>
+</head>
+<body>
+    <!-- normal html -->
+    <h1>hello bacho -pwskills</h1>
+    <p id="js"></p>
+    <button onclick="hey()" id="sintu">submit</button>
+    <!-- javascript -->
+    <script>
+        document.addEventListener('click',hello);
+        function hello(){
+            document.getElementById('js').innerText='namaste sintu ji';
+            document.getElementById('js').style.color='yellow';
+
+        }
+        function hey(){
+            document.getElementById('sintu').innerText='namaste';
+            document.getElementById('sintu').style.color='red';
+            document.getElementById('sintu').style.backgroundColor='blue';
+            document.getElementById('sintu').style.padding='black';
+
+
+        }
+    </script>
+</body>
+</html>

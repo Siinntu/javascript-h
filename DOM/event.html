@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>events</h1>
+    <button id="mybutton">click me</button>
+
+    <script>
+        var button=document.getElementById('mybutton')
+        //define event handle function
+        function handleclick(){
+            alert('button clicked')
+        }
+        //adding event listener
+        button.addEventListener('click',handleclick,{once:true})
+        //remove after 3sec
+        setTimeout(function(){
+            button.removeEventListener('click',handleclick)
+        },3000)
+    </script>
+    
+</body>
+</html>
